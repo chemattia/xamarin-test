@@ -13,15 +13,12 @@ namespace HelloXamarin
         public string Type { get; set; }
         public string ImagePath { get; set; }
 
-
         public RecipeDataSource(string name, string type, string imagePath)
         {
             Name = name;
             Type = type;
             ImagePath = imagePath;
         }
-
-
 
         public static List<RecipeDataSource> GetList()
         {
