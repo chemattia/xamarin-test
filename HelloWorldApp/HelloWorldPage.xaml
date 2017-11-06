@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorldApp.HelloWorldPage">
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness"
+                iOS="20, 40, 20, 20"
+                Android="20, 20, 20, 20"
+                WinPhone="20, 20, 20, 20" />
+  </ContentPage.Padding>
+  <ContentPage.Content>
+    <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Vertical"
+                 Spacing="15">
+
+    
+      <Image x:Name="logo"></Image>  
+     
+            
+      <Label Text="Username:" />
+      <Entry x:Name="Username" Text="" />
+      <Label Text="Password:" />
+      <Entry x:Name="Password" Text="" IsPassword="true" />
+      <Button x:Name="LoginButton" Text="Login" Clicked="LoginButton_OnClicked" />
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
